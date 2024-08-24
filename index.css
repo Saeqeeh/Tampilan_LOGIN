@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(bromo2.jpg);
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.623);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    
+}
+
+.input-group {
+    padding-right: 21px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 100%;
+    padding: 10px;
+    border: 0px solid #000000;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+button:hover {
+    background-color: grey;
+
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: rgb(0, 132, 255);
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
