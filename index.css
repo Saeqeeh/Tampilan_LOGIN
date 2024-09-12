@@ -1,9 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(bromo2.jpg);
-    background-size: cover;
-    background-position: center ;
+    background: url(bg-login.png);
     background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,69 +11,81 @@ body {
 }
 
 .login-container {
-    background-color: rgba(0, 0, 0, 0.623);
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    /* background: #09093d50; */
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 320px;
+    backdrop-filter: blur(9%);
+
+    
 }
 
 .login-container h2 {
-    margin-bottom: 20px;
-    
-}
-
-.input-group {
-    padding-right: 21px;
-    margin-bottom: 15px;
-    text-align: left;
-}
-
-.input-group label {
-    
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.input-group input {
-    background-color: rgba(0, 0, 0, 0.39);
-    width: 100%;
-    padding: 10px;
-    border: 0px solid #000000;
-    border-radius: 5px;
-    color: #fff;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: black;
     color: white;
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.login-container label {
+    color: white;
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"], 
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: none;
     border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.checkbox-container label {
+    color: white;
+    margin: 2px 2px 2px 2px;
+    
+}
+.checkbox-container label :hover {
+    text-decoration: underline;
+}
+
+.login-container button {
+    background: linear-gradient(135deg, rgb(3, 163, 255), #1972d8, #110dfa);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 50px;
     cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+    font-size: 20px;
 }
 
-button:hover {
-    background-color: grey;
-
+.login-container p {
+    color: white;
+    margin-top: 15;
 }
 
-p {
-    margin-top: 20px;
-}
-
-p a {
-    color: rgb(0, 132, 255);
+.login-container a {
+    color: #2f00ff;
     text-decoration: none;
 }
 
-p a:hover {
+.login-container a:hover {
     text-decoration: underline;
 }
+
+

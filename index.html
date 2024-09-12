@@ -3,26 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <h1 class="text">E-SPP</h1>
     <div class="login-container">
-        <h2>Login</h2>
-        <form action="#" method="post">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
+        <h2>LOGIN</h2>
+        <form>
+            <label for="username">Username :</label>
+            <input type="text" placeholder="Username" id="username" name="username" required>
+            
+            <label for="password">Password :</label>
+            <input type="password" placeholder="Password" id="password" name="password" required>
+            
+            <div class="checkbox-container">
+                <input type="checkbox" id="showPassword">
+                <label for="show-password">Lihat Password</label>
             </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Login</button>
+
+           
+            <button type="submit">LOGIN</button>
         </form>
-        <p>tidak punya akun? <a href="#">Sign up</a></p>
+        <p>tidak punya akun? <a href="#">Register</a></p>
     </div>
+
+
+
+
+      
 </body>
 
 
+<script>
+        document.getElementById('showPassword').onclick = function() {
+    if ( this.checked ) {
+       document.getElementById('password').type = "text";
+    } else {
+       document.getElementById('password').type = "password";
+    }
+};
+</script>
 </html>
