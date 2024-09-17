@@ -5,27 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+    <div data-aos="fade-down"
+    data-aos-easing="linear"
+    data-aos-duration="1500"
+     style="transition: 3s;">
 
     <div class="login-container">
-        <h2>LOGIN</h2>
-        <form>
-            <label for="username">Username :</label>
-            <input type="text" placeholder="Username" id="username" name="username" required>
+        <img src="MAHAPUTRA-removebg-preview.png" alt="">
+        <!-- <h2>LOGIN</h2> -->
+            <form>
+                <label for="username">Username :</label>
+                <input type="text" placeholder="Username" id="username" name="username" required>
             
-            <label for="password">Password :</label>
-            <input type="password" placeholder="Password" id="password" name="password" required>
+                <label for="password">Password :</label>
+                <input type="password" placeholder="Password" id="password" name="password" required>
             
-            <div class="checkbox-container">
-                <input type="checkbox" id="showPassword">
-                <label for="show-password">Lihat Password</label>
-            </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="showPassword">
+                    <label for="show-password">Lihat Password</label>
+                </div>
 
-            <button type="submit">LOGIN</button>
-        </form>
+                <button type="submit">LOGIN</button>
+            </form>
         <p>tidak punya akun? <a href="#">Register</a></p>
     </div>
+    </div>
+
+   
 
 
 
@@ -33,6 +42,8 @@
       
 </body>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script> AOS.init();</script>
 
 <script>
         document.getElementById('showPassword').onclick = function() {
@@ -42,5 +53,11 @@
        document.getElementById('password').type = "password";
     }
 };
+
+
+
 </script>
+
+
+
 </html>

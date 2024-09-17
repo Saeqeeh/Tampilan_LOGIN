@@ -19,8 +19,15 @@ body {
     text-align: center;
     width: 320px;
     backdrop-filter: blur(9%);
+    transition: 1s;
 
     
+}
+
+.login-container:hover{
+    border-radius: 30px;
+    transition: 2s;
+ 
 }
 
 .login-container h2 {
@@ -28,6 +35,19 @@ body {
     margin-bottom: 20px;
     font-size: 40px;
 }
+
+.login-container h2:hover{
+    color: black;
+    font-size: 100px;
+    transition: 2s;
+
+}
+
+img{
+    border-radius: 200px;
+    width: 200px;
+}
+
 
 .login-container label {
     color: white;
@@ -45,6 +65,9 @@ body {
     border-radius: 5px;
     box-sizing: border-box;
 }
+
+
+
 
 .checkbox-container {
     display: flex;
@@ -72,8 +95,18 @@ body {
     height: 50px;
     cursor: pointer;
     font-size: 20px;
-}
+    transition: 2s;
 
+}
+.login-container button:hover {
+
+    width:  80%;
+    transition: 2s;
+    transition: 2s ease-in-out;
+    font-size: 20px;
+    border-radius: 30px;
+    
+}
 .login-container p {
     color: white;
     margin-top: 15;
